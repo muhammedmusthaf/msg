@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/certification.css';
+import '../styles/Certification.css';
 
 const Certification = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
