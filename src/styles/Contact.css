@@ -1,0 +1,279 @@
+
+        
+
+/* CSS Styles */
+.contact-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  .contact-hero {
+    position: relative;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+  }
+  
+  
+  .contact-title {
+    font-size: 80px;
+    margin-top: 70px;
+  }
+  
+  .highlight {
+    color: yellow;
+  }
+  
+  .contact-wrapper {
+    text-align: center;
+    margin: 40px 0;
+  }
+ 
+  .small-title {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .main-title {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .sub-text {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .btn1-custom {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .btn1-custom:hover {
+    background-color: #e65c00;
+  }
+  
+  .contact-details {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    color: #444;
+  }
+  
+  .section-heading {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 700px;
+  }
+  
+  .map-container {
+    flex: 1;
+    min-width: 300px;
+    height: 500px;
+    margin-top: 60px;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .contact-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  .contact-box {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border: 4px solid #ffd700;
+  }
+  
+  .contact-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .contact-box h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .contact-box p {
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+  }
+  
+  .contact-box-3 {
+    grid-column: span 2;
+    justify-self: center;
+    width: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    .contact-grid {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: auto;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .map-container iframe {
+      height: 60vh!important; /* Ensure the iframe fills the container */
+      width: 100%;
+  }
+  
+    .map-container {
+     
+      height: 800px; /* Adjust height for better fit */
+      display: flex;
+      justify-content: center;
+    }
+  
+    .contact-boxes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+      max-width: 90%;
+      margin-top: 30px;
+    }
+    .map-container
+     {
+      width: 95%;
+    }
+  
+    .contact-box {
+      width: 90%; /* Keep elements centered */
+      max-width: 400px;
+    }
+  
+    .contact-box-3 {
+      width: 90%;
+      max-width: 400px;
+    }
+  
+    .contact-wrapper,
+    .contact-details,
+    .contact-hero {
+      text-align: center;
+    }
+  
+    .contact-title {
+      font-size: 50px; /* Adjust for smaller screens */
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+
+    .map-container iframe {
+        height: 70vh !important; /* Ensure iframe fills container */
+        width: 100%;
+    }
+
+    .map-container {
+        width: 95%;
+        height: 900px; /* Increased height for better view */
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 90%;
+        height: 120vh;
+       
+    }
+
+    .contact-box {
+        width: 90%; /* Centering elements */
+        max-width: 350px;
+        padding: 10px;
+    }
+
+    .contact-box img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-box h4 {
+        font-size: 16px;
+    }
+
+    .contact-box p {
+        font-size: 16px;
+    }
+
+    .contact-box-3 {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .contact-wrapper,
+    .contact-details,
+    .contact-hero {
+        text-align: center;
+    }
+
+    .contact-title {
+        font-size: 40px; /* Adjust for smaller screens */
+    }
+}

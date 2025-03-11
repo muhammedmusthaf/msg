@@ -1,0 +1,229 @@
+
+  .missionvision-mission-vision {
+      text-align: left;
+      padding: 50px;
+      max-width: 100%;
+      margin: auto;
+      background-color: white;
+      margin-top: -100px;
+    }
+    
+    .missionvision-heading4 {
+      position: relative;
+      font-size: 2rem;
+      color: black;
+      display: inline-block;
+      text-align: center;
+      display: block;
+      margin-left: 60px;
+    }
+    
+    .missionvision-heading4::before,
+    .missionvision-heading4::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: 8px solid #6f8f9c;
+    }
+    
+    .missionvision-heading4::before {
+      top: -10px;
+      left: 460px;
+      border-right: none;
+      border-bottom: none;
+    }
+    
+    .missionvision-heading4::after {
+      bottom: -10px;
+      right: 460px;
+      border-left: none;
+      border-top: none;
+    }
+    
+    .missionvision-cards {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      margin-left: 100px;
+      margin-top: 60px;
+      width: 1200px;
+      height: 350px;
+    }
+    
+    .missionvision-card {
+      flex: 1;
+      padding: 30px;
+      border-radius: 30px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease-in-out;
+    }
+    
+    .missionvision-vision {
+      background: linear-gradient(to right, #4a6c88, #6f8f9c, #92b3b9);
+    }
+  
+    .missionvision-mission {
+      background: linear-gradient(to right, #2d5173, #4a6c88, #6f8f9c);
+    }
+    
+    .missionvision-icon {
+      font-size: 65px;
+      color: black;
+      margin-bottom: 15px;
+    }
+    
+    .missionvision-card h3 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 10px;
+    }
+    
+    .missionvision-card p {
+      font-size: 20px;
+      color: black;
+      font-weight: bold;
+      line-height: 1.6;
+      padding-top:20px;
+    }
+  
+    @media (max-width: 1024px) {
+      .missionvision-mission-vision {
+        padding: 30px;
+        margin-top: -50px;
+      }
+    
+      .missionvision-heading4 {
+        font-size: 1.8rem;
+        margin-left: 0;
+        text-align: center;
+        display: block;
+      }
+    
+      .missionvision-cards {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-left: 0;
+        gap: 30px;
+      }
+      
+      .missionvision-card {
+        width: 80%;
+        padding: 25px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .missionvision-mission-vision {
+        padding: 20px;
+      }
+      
+      .missionvision-heading4 {
+        font-size: 1.6rem;
+      }
+    
+      .missionvision-cards {
+        gap: 20px;
+      }
+    
+      .missionvision-card {
+        width: 50%;
+        padding: 20px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .missionvision-mission-vision {
+        padding: 15px;
+      }
+    
+      .missionvision-card {
+        width: 80%;
+        padding: 15px;
+        margin-top: 30px;
+      }
+  
+      .missionvision-heading4 {
+        position: relative;
+        font-size: 1.6rem;
+        color: black;
+        display: inline-block;
+        text-align: center;
+        display: block;
+        margin-left: 10px;
+        top:30px;
+      }
+      
+      .missionvision-heading4::before,
+      .missionvision-heading4::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border: 8px solid #6f8f9c;
+      }
+      
+      .missionvision-heading4::before {
+        top: -15px;
+        left: -5px;
+        border-right: none;
+        border-bottom: none;
+      }
+      
+      .missionvision-heading4::after {
+        bottom: -15px;
+        right: -5px;
+        border-left: none;
+        border-top: none;
+      }
+    }
+    
+    @media (max-width: 330px) {
+      .missionvision-mission-vision {
+        padding: 15px;
+      }
+    
+      .missionvision-card {
+        width: 90%;
+        padding: 15px;
+        margin-top: 100px;
+      }
+  
+      .missionvision-heading4 {
+        position: relative;
+        font-size: 1.4rem;
+        color: black;
+        display: inline-block;
+        text-align: center;
+        display: block;
+        margin-left: 10px;
+        top:80px;
+      }
+      
+      .missionvision-heading4::before,
+      .missionvision-heading4::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border: 8px solid #6f8f9c;
+      }
+      
+      .missionvision-heading4::before {
+        top: -15px;
+        left: -10px;
+        border-right: none;
+        border-bottom: none;
+      }
+      
+      .missionvision-heading4::after {
+        bottom: -15px;
+        right: -10px;
+        border-left: none;
+        border-top: none;
+      }
+    }

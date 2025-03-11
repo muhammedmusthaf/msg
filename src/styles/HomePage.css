@@ -1,0 +1,251 @@
+/* Container Styles */
+.homepage-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e3a5f;
+  color: white;
+  padding: 50px;
+  position: relative;
+}
+
+/* Text Content */
+.homepage-text-content {
+  width: 60%;
+}
+
+.homepage-text-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.homepage-dots-underline {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.homepage-dots {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 5px;
+}
+
+.homepage-dots span {
+  width: 5px;
+  height: 5px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.homepage-underline {
+  width: 100px;
+  height: 4px;
+  background-color: yellow;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  margin-left: 7px;
+}
+
+.homepage-text-content p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Image Slider */
+.homepage-image-content {
+  width: 35%;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-slider-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+}
+
+.homepage-slider-image.homepage-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Products Section */
+.homepage-products-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.homepage-products-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.homepage-products-subtitle {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 40px;
+}
+
+/* Product Grid Layout */
+.homepage-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Individual Product Card */
+.homepage-product-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage-product-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-50%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+.homepage-product-card {
+  width: 330px;
+  height: 263px;
+  background-image: linear-gradient(to bottom, #4a6c88, #6f8f9c, #92b3b9);
+  color: black;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.homepage-product-card:hover {
+  transform: translateY(-10px) rotateY(5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.homepage-product-image-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+  background: white;
+}
+
+.homepage-product-image {
+  width: 80%;
+  max-width: 140px;
+  height: 100px;
+}
+
+/* Button Styles */
+.homepage-button-container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-cta-button {
+  background-color: #ffeb3b;
+  color: black;
+  padding: 18px 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.homepage-cta-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .homepage-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-container {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .homepage-image-content {
+    width: 65%;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homepage-text-content {
+    width: 100%;
+  }
+
+  .homepage-text-content h1 {
+    font-size: 28px;
+  }
+
+  .homepage-text-content p {
+    font-size: 14px;
+  }
+
+  .homepage-products-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .homepage-cta-button {
+    padding: 14px 40px;
+    font-size: 1.1rem;
+  }
+
+  .homepage-product-image {
+    width: 70%;
+    max-width: 110px;
+  }
+}

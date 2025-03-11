@@ -1,0 +1,156 @@
+/* Header.css */
+.header-header-container {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+}
+
+.header-video-background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Ensures the video is behind the text */
+}
+
+.header-video-background {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Ensures the video covers the entire area */
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: flex-start; /* Aligns the content to the left */
+  align-items: center; /* Centers the content vertically */
+  text-align: left;
+}
+
+.header-content {
+  z-index: 1; /* Ensures content appears above the video */
+  color: white;
+  padding: 2rem;
+}
+
+.header-text-overlay {
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.header-main-heading {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.header-subheading {
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+}
+
+.header-who-we-are {
+  margin-top: 20px;
+}
+
+.header-who-we-are p {
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  padding-bottom: 8px;
+  left: 15px;
+  text-align: left;
+}
+
+.header-who-we-are p span {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 50px;
+  width: 100%;
+  border-bottom: 2px solid yellow;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+/* Tablets and small laptops */
+
+
+/* Large smartphones and small tablets */
+@media screen and (max-width: 768px) {
+  .header-main-heading {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .header-subheading {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  
+  .header-text-overlay {
+    max-width: 90%;
+  }
+  
+  .header-who-we-are p {
+    left: 10px;
+  }
+}
+
+/* Smartphones */
+@media screen and (max-width: 480px) {
+  .header-header-container, 
+  .header-video-background-container,
+  .header-video-background,
+  .header-overlay {
+    height: 80vh; /* Maintain full height on mobile */
+  }
+  
+  .header-main-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header-subheading {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .header-content {
+    padding: 1rem;
+  }
+  
+  .header-who-we-are p {
+    left: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .header-who-we-are p span {
+    right: 25px;
+  }
+}
+
+/* Very small devices */
+@media screen and (max-width: 375px) {
+  .header-main-heading {
+    font-size: 1.8rem;
+  }
+  
+  .header-text-overlay {
+    max-width: 95%;
+  }
+}

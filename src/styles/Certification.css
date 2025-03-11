@@ -1,0 +1,270 @@
+/* app.css */
+/* Base container */
+.certification-app-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  top:82px;
+  overflow-x: hidden;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+/* Certificate card styling */
+.certification-card {
+  width: 100%; 
+  background: #1e3a8a;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+/* Background image container */
+.certification-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.certification-background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+}
+
+/* Certificate image styling */
+.certification-image-container {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+}
+
+.certification-image {
+  max-width: 80%;
+  max-height: 50%;
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  object-fit: contain;
+  aspect-ratio: 16/9;
+}
+
+/* Content sections */
+.certification-content-section {
+  width: 90%;
+  max-width: 1174px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  color: #333;
+  text-align: center;
+  font-size: 20px;
+}
+
+.certification-quote-container {
+  width: 90%;
+  max-width: 1178px;
+  background-color: #89a9eb;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  position: relative;
+  font-size: 20px;
+}
+
+.certification-quote-icon {
+  font-size: 50px;
+  color: #ffdd57;
+  position: absolute;
+  bottom: 53px;
+  right: 10px;
+}
+
+/* Social media styling */
+.certification-social-media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  position: relative;
+  font-size: 20px;
+}
+
+.certification-social-icon {
+  background-color: #ffdd57;
+  padding: 12px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.certification-social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Slideshow styling */
+.certification-slideshow-container {
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.slide.active {
+  display: block;
+  animation: fadein 0.5s ease-in-out;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+/* Responsive adjustments */
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  .certification-app-container {
+    padding: 15px;
+  }
+
+  .certification-card {
+    flex-direction: column;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .certification-image-container {
+    max-width: 90%;
+  }
+
+  .certification-content-section,
+  .certification-quote-container {
+    width: 95%;
+  }
+
+  .certification-slideshow-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .certification-app-container {
+    padding: 10px;
+  }
+
+  .certification-card {
+    padding: 15px;
+  }
+
+  .certification-image {
+    max-width: 100%;
+    max-height: 60%;
+    margin-top: 20px;
+  }
+
+  .certification-content-section {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .certification-quote-container {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .certification-social-media {
+    font-size: 18px;
+  }
+
+  .certification-social-icon {
+    padding: 10px;
+  }
+
+  .certification-slideshow-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .certification-app-container {
+    padding: 5px;
+  }
+
+  .certification-card {
+    padding: 10px;
+  }
+
+  .certification-image-container {
+    max-width: 100%;
+  }
+
+  .certification-image {
+    max-width: 500px;
+    max-height: 50%;
+    margin-top: 20px;
+  }
+
+  .certification-content-section {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .certification-quote-container {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .certification-social-media {
+    font-size: 16px;
+    gap: 5px;
+  }
+
+  .certification-social-icon {
+    padding: 8px;
+  }
+
+  .certification-slideshow-container {
+    width: 100%;
+  }
+}

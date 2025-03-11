@@ -1,0 +1,210 @@
+.gallery-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header Section */
+.gallery-header {
+  background: url('/assets/galbac.webp') 
+    no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  
+  position: relative;
+  width: 100%; /* Fix width */
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-header h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 70px;
+  margin-top: 50px;
+}
+
+/* Products Section */
+.products-section {
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  justify-content: center;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Image Styling */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 20px;
+  background: #f8f8f8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-slider {
+  width: 100%;
+  margin: auto;
+  height: 400px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Prevent slide misalignment */
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 0.6;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+.swiper-pagination-bullet-active {
+  background: blue;
+  opacity: 1;
+  transform: scale(1.3);
+}
+.swiper-button-prev,
+  .swiper-button-next {
+    width: 25px;
+    height: 25px;
+  }
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {  
+  .gallery-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery-item {
+    width: 90%;
+    max-width: 280px;
+    height: 250px;
+  }
+
+  .gallery-header {
+    height: 60vh;
+  }
+
+  .gallery-header h1 {
+    font-size: 40px;
+    
+  }
+
+  .swiper-slide {
+    height: 300px;
+  }
+
+  /* Removed extra gap in Swiper wrapper */
+  .swiper-wrapper {
+    gap: 0;
+  }
+
+  .gallery-slider .swiper {
+    width: 100%;
+  }
+  .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+  }
+  
+
+  /* Removed width override */
+}
+
+@media (max-width: 480px) {  
+  .gallery-header {
+    height: 60vh;
+  }
+  
+  .gallery-slider {
+    height: 300px;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery-header h1 {
+    font-size: 40px;
+   
+  }
+
+  .products-section {
+    font-size: 1.5rem;
+  }
+
+  .gallery-item {
+    width: 90%;
+    max-width: 250px;
+    height: 220px;
+  }
+
+  .swiper-slide {
+    height: 280px;
+  }
+
+  .swiper-pagination-bullet-active {
+    transform: scale(1.2); /* Adjusted scale */
+  }
+
+  .swiper-wrapper {
+    gap: 0;
+  }
+  .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 25px;
+    height: 25px;
+  }
+}

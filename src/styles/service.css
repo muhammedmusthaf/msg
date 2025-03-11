@@ -1,0 +1,218 @@
+/* General Page Styling */
+.inspection-page {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 60vh;
+  background: url("/assets/industrial.webp") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-title {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 80px;
+}
+
+/* Content Section */
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 500px;
+}
+
+.inspection-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.text-content {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: black;
+  position: relative;
+    display: inline-block;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgb(22, 3, 7);
+  margin-bottom: 20px;
+}
+
+
+/* CTA Button */
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+.testing-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.testing-list li {
+  font-size: 1.1rem;
+  background: #222;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px ;
+  border: 4px solid #ffd700;
+  color: #f8f8f8;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border:6px solid #ffd700;
+}
+
+.section-title::before {
+    top: -8px;
+    left: -20px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.section-title::after {
+    bottom: -8px;
+    right: -20px;
+    border-left: none;
+    border-top: none;
+}
+.valves-image{
+  margin-bottom: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+.plates-image{
+  margin-bottom: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: 60vh;
+  }
+  .valves-image,
+  .plates-image {
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .content-section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  .hero-section {
+    height: 60vh;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .content-section {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-text {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  .valves-image,
+  .plates-image {
+    margin-bottom: 20px;
+  }
+}

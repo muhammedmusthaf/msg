@@ -1,0 +1,607 @@
+.usp-card-description{
+    padding:50px;
+    text-align: left;
+}
+
+  
+.usp-container {
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+}
+  
+.usp-heading {
+    position: relative;
+    font-size: 2rem;
+    margin-top: 60px;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.usp-heading::before,
+.usp-heading::after {
+    content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+    border: 8px solid #6f8f9c; /* Adjust color as needed */
+}
+
+.usp-heading::before {
+    top: -10px;
+    left: -35px;
+    border-right: none;
+      border-bottom: none;
+}
+
+.usp-heading::after {
+    bottom: 30px;
+    right: -35px;
+    border-left: none;
+      border-top: none;
+}
+
+  
+  
+.usp-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+  
+.usp-scroll-box {
+    display: flex;
+    gap: 22px;
+    overflow: hidden; /* Prevents manual scrolling */
+    scroll-behavior: smooth;
+    width: 1020px; /* 3 cards width */
+    margin-left: 20px;
+}
+  
+.usp-scroll-box::-webkit-scrollbar {
+    display: none;
+}
+  
+.usp-card {
+    min-width: 320px; /* Single card width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color:black;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 30px;
+    padding-bottom: 40px;
+    border-radius: 30px;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+ .usp-card-image
+ {
+    height:90px;
+ } 
+ .card-1 .usp-card-image
+ {
+    margin-top: 55px;
+ }
+ .card-2 .usp-card-image
+ {
+    margin-top: 55px;
+ }
+ .card-3 .usp-card-image
+ {
+    margin-top: 60px;
+ }
+ .card-4 .usp-card-image
+ {
+    margin-top: 55px;
+ }
+ .card-5 .usp-card-image
+ {
+    margin-top: 62px;
+ }
+ .card-6 .usp-card-image
+ {
+    margin-top: 65px;
+ }
+ .usp-card-description
+ {
+    line-height:1.8;
+    font-size:20px;
+ }
+ .usp-card-title{
+    font-size: 24px;
+ }
+ .usp-card:nth-child(odd) {
+    background: linear-gradient(to right, #4a6c88, #6f8f9c, #92b3b9); /* Light Gray */
+}
+
+.usp-card:nth-child(even) {
+    background: linear-gradient(to right, #2d5173, #4a6c88, #6f8f9c);
+}
+
+
+
+  
+.usp-left {
+    left: 20px;
+}
+  
+.usp-right {
+    right: 20px;
+}
+  
+
+
+/* Pagination Dots */
+.usp-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.usp-dot {
+    width: 10px;
+    height: 10px;
+    background: #b0d4ff; /* Soft Blue */
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background 0.3s;
+}
+
+.usp-dot.active {
+    background: #3478f6; /* Highlighted Blue */
+}
+
+
+@media (max-width: 1024px)
+{
+    body { 
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 600px;
+        background: white; /* Light Blue */
+    }
+    .usp-card-description{
+        padding: 20px;
+        text-align: left;
+    }
+    
+      
+    .usp-container {
+        width: 100%;
+        min-height: 500px;
+        text-align: center;
+    }
+      
+    .usp-heading {
+        position: relative;
+        font-size: 2rem;
+        margin-top: 60px;
+        color: black;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .usp-heading::before,
+    .usp-heading::after {
+        content: "";
+          position: absolute;
+          width: 30px;
+          height: 30px;
+        border: 8px solid #6f8f9c; /* Adjust color as needed */
+    }
+    
+    .usp-heading::before {
+        top: -10px;
+        left: -35px;
+        border-right: none;
+          border-bottom: none;
+    }
+    
+    .usp-heading::after {
+        bottom: -10px;
+        right: -35px;
+        border-left: none;
+          border-top: none;
+    }
+    
+      
+      
+    .usp-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+    }
+      
+    .usp-scroll-box {
+        display: flex;
+        gap: 22px;
+        overflow: hidden; /* Prevents manual scrolling */
+        scroll-behavior: smooth;
+        width: 1020px; /* 3 cards width */
+        margin-left: 20px;
+    }
+      
+    .usp-scroll-box::-webkit-scrollbar {
+        display: none;
+    }
+      
+    .usp-card {
+        min-width: 320px; /* Single card width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color:black;
+        font-weight: bold;
+        transition: transform 0.3s ease-in-out;
+        
+        margin-top: 30px;
+        padding-bottom: 40px;
+        border-radius: 30px;
+    
+        height: 400px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    
+        font-size: 20px;
+    }
+    
+     .usp-card-image
+     {
+        height:90px;
+     } 
+     .card-1 .usp-card-image
+     {
+        margin-top: 35px;
+     }
+     .card-2 .usp-card-image
+     {
+        margin-top: 10px;
+     }
+     .card-3 .usp-card-image
+     {
+        margin-top: 15px;
+     }
+     .card-4 .usp-card-image
+     {
+        margin-top: 46px;
+     }
+     .card-5 .usp-card-image
+     {
+        margin-top: 20px;
+     }
+     .card-6 .usp-card-image
+     {
+        margin-top: 52px;
+     }
+     .usp-card-description
+     {
+        line-height:1.8;
+        font-size:17px;
+     }
+     .usp-card:nth-child(odd) {
+        background: linear-gradient(to right, #4a6c88, #6f8f9c, #92b3b9); /* Light Gray */
+    }
+    
+    .usp-card:nth-child(even) {
+        background: linear-gradient(to right, #2d5173, #4a6c88, #6f8f9c);
+    }
+    
+    
+   
+      
+    .usp-left {
+        left: 20px;
+    }
+      
+    .usp-right {
+        right: 20px;
+    }
+      
+    
+    
+    /* Pagination Dots */
+    .usp-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+    
+    .usp-dot {
+        width: 10px;
+        height: 10px;
+        background: #b0d4ff; /* Soft Blue */
+        border-radius: 50%;
+        margin: 0 5px;
+        transition: background 0.3s;
+    }
+    
+    .usp-dot.active {
+        background: #3478f6; /* Highlighted Blue */
+    }
+}
+
+
+@media(max-width: 768px)
+{
+    body { 
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 600px;
+        background: white; /* Light Blue */
+    }
+    .usp-card-description{
+        padding: 20px;
+        text-align: left;
+    }
+    
+      
+    .usp-container {
+        width: 100%;
+        min-height: 500px;
+        text-align: center;
+    }
+      
+    .usp-heading {
+        position: relative;
+        font-size: 2rem;
+        margin-top: 60px;
+        color: black;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .usp-heading::before,
+    .usp-heading::after {
+        content: "";
+          position: absolute;
+          width: 30px;
+          height: 30px;
+        border: 8px solid #6f8f9c; /* Adjust color as needed */
+    }
+    
+    .usp-heading::before {
+        top: -10px;
+        left: -35px;
+        border-right: none;
+          border-bottom: none;
+    }
+    
+    .usp-heading::after {
+        bottom: -10px;
+        right: -35px;
+        border-left: none;
+          border-top: none;
+    }
+    
+      
+      
+    .usp-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+    }
+      
+    .usp-scroll-box {
+        display: flex;
+        gap: 22px;
+        overflow: hidden; /* Prevents manual scrolling */
+        scroll-behavior: smooth;
+        width: 1020px; /* 3 cards width */
+        margin-left: 20px;
+    }
+      
+    .usp-scroll-box::-webkit-scrollbar {
+        display: none;
+    }
+      
+    .usp-card {
+        min-width: 320px; /* Single card width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color:black;
+        font-weight: bold;
+        transition: transform 0.3s ease-in-out;
+        
+        margin-top: 30px;
+        padding-bottom: 40px;
+        border-radius: 30px;
+    
+        height: 400px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    
+        font-size: 20px;
+    }
+    
+     .usp-card-image
+     {
+        height:90px;
+     } 
+     .card-1 .usp-card-image
+     {
+        margin-top: 35px;
+     }
+     .card-2 .usp-card-image
+     {
+        margin-top: 10px;
+     }
+     .card-3 .usp-card-image
+     {
+        margin-top: 15px;
+     }
+     .card-4 .usp-card-image
+     {
+        margin-top: 46px;
+     }
+     .card-5 .usp-card-image
+     {
+        margin-top: 20px;
+     }
+     .card-6 .usp-card-image
+     {
+        margin-top: 52px;
+     }
+     .usp-card-description
+     {
+        line-height:1.8;
+        font-size:17px;
+     }
+     .usp-card:nth-child(odd) {
+        background: linear-gradient(to right, #4a6c88, #6f8f9c, #92b3b9); /* Light Gray */
+    }
+    
+    .usp-card:nth-child(even) {
+        background: linear-gradient(to right, #2d5173, #4a6c88, #6f8f9c);
+    }
+    
+    
+    
+    .usp-left {
+        left: 20px;
+    }
+      
+    .usp-right {
+        right: 20px;
+    }
+      
+    
+    
+    /* Pagination Dots */
+    .usp-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+    
+    .usp-dot {
+        width: 10px;
+        height: 10px;
+        background: #b0d4ff; /* Soft Blue */
+        border-radius: 50%;
+        margin: 0 5px;
+        transition: background 0.3s;
+    }
+    
+    .usp-dot.active {
+        background: #3478f6; /* Highlighted Blue */
+    }
+}
+
+@media (max-width: 480px)
+{
+    .usp-heading {
+        position: relative;
+        font-size: 1.6rem;
+        margin-top: 60px;
+        color: black;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .usp-card {
+        transform: scaleX(0.98); /* Single card width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:black;
+        font-weight: bold;
+        transition: transform 0.3s ease-in-out;
+        margin-top: 30px;
+        padding-bottom: 40px;
+        border-radius: 30px;
+        height: 380px;
+        text-align: center;
+        flex-direction: column;
+        font-size: 20px;
+        
+    }
+
+    .usp-scroll-box {
+        display: flex;
+        gap: 0px;
+        overflow:auto; /* Prevents manual scrolling */
+        scroll-behavior: smooth;
+        width: 320px; /* 3 cards width */
+        margin-left: 20px;
+        -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on mobile */
+        scrollbar-width: none; 
+    }
+    .usp-heading::before {
+        top: -10px;
+        left: -35px;
+        border-right: none;
+          border-bottom: none;
+    }
+    
+    .usp-heading::after {
+        bottom: 30px;
+        right: -35px;
+        border-left: none;
+          border-top: none;
+    }
+
+}
+
+@media(max-width :330px)
+{
+    .usp-card {
+        transform: scaleX(0.9);
+        height:360px;
+    }
+    .usp-heading
+    {
+        font-size: 1.4rem;
+    }
+    .usp-scroll-box {
+        display: flex;
+        gap: 0px;
+        overflow:auto; /* Prevents manual scrolling */
+        scroll-behavior: smooth;
+        width: 300px; /* 3 cards width */
+        margin-left: -10px;
+        -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on mobile */
+        scrollbar-width: none; 
+    }
+    .usp-heading::before {
+        top: -10px;
+        left: -35px;
+        border-right: none;
+          border-bottom: none;
+    }
+    
+    .usp-heading::after {
+        bottom: 30px;
+        right: -35px;
+        border-left: none;
+          border-top: none;
+    }
+}
