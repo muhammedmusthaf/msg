@@ -1,4 +1,4 @@
-import React, { useState,useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import "../styles/PipeCalculator.css";
@@ -155,42 +155,42 @@ function PipeCalculator() {
     { size: "24\"", sch: "160", kgPerMeter: 808.22 },
     { size: "26\"", sch: "10", kgPerMeter: 127.36 },
     { size: "26\"", sch: "20 / XS", kgPerMeter: 202.72 },
-  { size: "26\"", sch: "STD", kgPerMeter: 152.87 },
-  { size: "28\"", sch: "10", kgPerMeter: 137.32 },
-  { size: "28\"", sch: "20 / XS", kgPerMeter: 218.68 },
-  { size: "28\"", sch: "30", kgPerMeter: 271.21 },
-  { size: "28\"", sch: "STD", kgPerMeter: 164.85 },
-  { size: "30\"", sch: "10", kgPerMeter: 147.28 },
-  { size: "30\"", sch: "20 / XS", kgPerMeter: 234.67 },
-  { size: "30\"", sch: "30", kgPerMeter: 292.18 },
-  { size: "30\"", sch: "STD", kgPerMeter: 176.84 },
-  { size: "32\"", sch: "10", kgPerMeter: 157.24 },
-  { size: "32\"", sch: "20 / XS", kgPerMeter: 250.64 },
-  { size: "32\"", sch: "30", kgPerMeter: 312.15 },
-  { size: "32\"", sch: "STD", kgPerMeter: 188.82 },
-  { size: "32\"", sch: "40", kgPerMeter: 342.91 },
-  { size: "34\"", sch: "10", kgPerMeter: 167.2 },
-  { size: "34\"", sch: "20 / XS", kgPerMeter: 266.61 },
-  { size: "34\"", sch: "30", kgPerMeter: 322.12 },
-  { size: "34\"", sch: "STD", kgPerMeter: 200.31 },
-  { size: "34\"", sch: "40", kgPerMeter: 365.9 },
-  { size: "36\"", sch: "10", kgPerMeter: 176.96 },
-  { size: "36\"", sch: "20 / XS", kgPerMeter: 282.27 },
-  { size: "36\"", sch: "30", kgPerMeter: 351.7 },
-  { size: "36\"", sch: "STD", kgPerMeter: 212.56 },
-  { size: "36\"", sch: "40", kgPerMeter: 420.42 },
-  { size: "38\"", sch: "STD", kgPerMeter: 224.54 },
-  { size: "38\"", sch: "XS", kgPerMeter: 298.24 },
-  { size: "40\"", sch: "STD", kgPerMeter: 236.53 },
-  { size: "40\"", sch: "XS", kgPerMeter: 314.22 },
-  { size: "42\"", sch: "STD", kgPerMeter: 248.52 },
-  { size: "42\"", sch: "XS", kgPerMeter: 330.19 },
-  { size: "44\"", sch: "STD", kgPerMeter: 260.5 },
-  { size: "44\"", sch: "XS", kgPerMeter: 346.16 },
-  { size: "46\"", sch: "STD", kgPerMeter: 272.25 },
-  { size: "46\"", sch: "XS", kgPerMeter: 351.82 },
-  { size: "48\"", sch: "STD", kgPerMeter: 284.24 },
-  { size: "48\"", sch: "XS", kgPerMeter: 377.79 },
+    { size: "26\"", sch: "STD", kgPerMeter: 152.87 },
+    { size: "28\"", sch: "10", kgPerMeter: 137.32 },
+    { size: "28\"", sch: "20 / XS", kgPerMeter: 218.68 },
+    { size: "28\"", sch: "30", kgPerMeter: 271.21 },
+    { size: "28\"", sch: "STD", kgPerMeter: 164.85 },
+    { size: "30\"", sch: "10", kgPerMeter: 147.28 },
+    { size: "30\"", sch: "20 / XS", kgPerMeter: 234.67 },
+    { size: "30\"", sch: "30", kgPerMeter: 292.18 },
+    { size: "30\"", sch: "STD", kgPerMeter: 176.84 },
+    { size: "32\"", sch: "10", kgPerMeter: 157.24 },
+    { size: "32\"", sch: "20 / XS", kgPerMeter: 250.64 },
+    { size: "32\"", sch: "30", kgPerMeter: 312.15 },
+    { size: "32\"", sch: "STD", kgPerMeter: 188.82 },
+    { size: "32\"", sch: "40", kgPerMeter: 342.91 },
+    { size: "34\"", sch: "10", kgPerMeter: 167.2 },
+    { size: "34\"", sch: "20 / XS", kgPerMeter: 266.61 },
+    { size: "34\"", sch: "30", kgPerMeter: 322.12 },
+    { size: "34\"", sch: "STD", kgPerMeter: 200.31 },
+    { size: "34\"", sch: "40", kgPerMeter: 365.9 },
+    { size: "36\"", sch: "10", kgPerMeter: 176.96 },
+    { size: "36\"", sch: "20 / XS", kgPerMeter: 282.27 },
+    { size: "36\"", sch: "30", kgPerMeter: 351.7 },
+    { size: "36\"", sch: "STD", kgPerMeter: 212.56 },
+    { size: "36\"", sch: "40", kgPerMeter: 420.42 },
+    { size: "38\"", sch: "STD", kgPerMeter: 224.54 },
+    { size: "38\"", sch: "XS", kgPerMeter: 298.24 },
+    { size: "40\"", sch: "STD", kgPerMeter: 236.53 },
+    { size: "40\"", sch: "XS", kgPerMeter: 314.22 },
+    { size: "42\"", sch: "STD", kgPerMeter: 248.52 },
+    { size: "42\"", sch: "XS", kgPerMeter: 330.19 },
+    { size: "44\"", sch: "STD", kgPerMeter: 260.5 },
+    { size: "44\"", sch: "XS", kgPerMeter: 346.16 },
+    { size: "46\"", sch: "STD", kgPerMeter: 272.25 },
+    { size: "46\"", sch: "XS", kgPerMeter: 351.82 },
+    { size: "48\"", sch: "STD", kgPerMeter: 284.24 },
+    { size: "48\"", sch: "XS", kgPerMeter: 377.79 },
   ];
 
   const [selectedPipe, setSelectedPipe] = useState(null);
@@ -199,9 +199,8 @@ function PipeCalculator() {
   const [rateCurrency, setRateCurrency] = useState('USD');
   const [rateUnit, setRateUnit] = useState('m.ton');
   const [rateValue, setRateValue] = useState('');
-  const [exchangeRate, setExchangeRate] = useState('');
   const [results, setResults] = useState({});
-  const printRef = useRef(); // Reference for PDF gene
+  const printRef = useRef(null);
 
   const uniquePipes = new Set();
   pipeData.forEach(pipe => {
@@ -209,10 +208,11 @@ function PipeCalculator() {
   });
 
   const calculateResults = () => {
-    if (!selectedPipe || !pipeLength || !rateValue || !exchangeRate || lengthUnit === 'select') {
+    if (!selectedPipe || !pipeLength || !rateValue || lengthUnit === 'select') {
       alert('Please fill in all required fields.');
       return;
     }
+
 
     const { kgPerMeter } = selectedPipe;
     const weightPerMeterTon = kgPerMeter / 1000;
@@ -251,19 +251,22 @@ function PipeCalculator() {
       ratePerKg = ratePerMeter / kgPerMeter;
     }
 
-    const convertedRatePerTon = rateCurrency === 'USD' ? ratePerTon * parseFloat(exchangeRate) : ratePerTon / parseFloat(exchangeRate);
-    const convertedRatePerKg = rateCurrency === 'USD' ? ratePerKg * parseFloat(exchangeRate) : ratePerKg / parseFloat(exchangeRate);
-    const convertedRatePerMeter = rateCurrency === 'USD' ? ratePerMeter * parseFloat(exchangeRate) : ratePerMeter / parseFloat(exchangeRate);
-    const convertedRatePerFeet = rateCurrency === 'USD' ? ratePerFeet * parseFloat(exchangeRate) : ratePerFeet / parseFloat(exchangeRate);
+
+    const exchangeRate = 3.67; // Fixed exchange rate
+
+    const convertedRatePerTon = rateCurrency === 'USD' ? ratePerTon * exchangeRate : ratePerTon / exchangeRate;
+    const convertedRatePerKg = rateCurrency === 'USD' ? ratePerKg * exchangeRate : ratePerKg / exchangeRate;
+    const convertedRatePerMeter = rateCurrency === 'USD' ? ratePerMeter * exchangeRate : ratePerMeter / exchangeRate;
+    const convertedRatePerFeet = rateCurrency === 'USD' ? ratePerFeet * exchangeRate : ratePerFeet / exchangeRate;
 
     const totalPrice = (
       rateUnit === 'm.ton' ? ratePerTon * lengthInTon :
-      rateUnit === 'kilogram' ? ratePerKg * lengthInKg :
-      rateUnit === 'meter' ? ratePerMeter * lengthInMeters :
-      rateUnit === 'feet' ? ratePerFeet * lengthInFeet : 0
+        rateUnit === 'kilogram' ? ratePerKg * lengthInKg :
+          rateUnit === 'meter' ? ratePerMeter * lengthInMeters :
+            rateUnit === 'feet' ? ratePerFeet * lengthInFeet : 0
     );
 
-    const convertedTotalPrice = rateCurrency === 'USD' ? totalPrice * parseFloat(exchangeRate) : totalPrice / parseFloat(exchangeRate);
+    const convertedTotalPrice = rateCurrency === 'USD' ? totalPrice * exchangeRate : totalPrice / exchangeRate;
 
     setResults({
       weightPerMeterKg: kgPerMeter.toFixed(3),
@@ -288,7 +291,7 @@ function PipeCalculator() {
   };
   const handleDownloadPDF = async () => {
     if (!printRef.current) return;
-    
+
     const input = printRef.current;
     const canvas = await html2canvas(input, { scale: 2 });
     const imgData = canvas.toDataURL("image/png");
@@ -345,51 +348,45 @@ function PipeCalculator() {
             <label>Rate Value:</label>
             <input type="number" value={rateValue} onChange={(e) => setRateValue(e.target.value)} />
           </div>
-          <div className="input-sectionpipe">
-            <label>Currency Exchange Rate:</label>
-            <input type="number" value={exchangeRate} onChange={(e) => setExchangeRate(e.target.value)} />
-          </div>
-         {/* Calculate Button */}
-        <button onClick={calculateResults} className="calculate-btn">
+          <button onClick={calculateResults} className="calculate-btn">
           Calculate
         </button>
-
         </>
       )}
 
       {results && Object.keys(results).length > 0 && (
-       <div className="results-sectionpipe" ref={printRef}>
-       <img src="/assets/msglogo.png" alt="Company Logo" className="logo" />
-       <h2>MSG Oilfield Equipment Trading LLC</h2>
-       <p>Dubai industrial city Phase 1,Salih Shuaib 2,Warehouse No:J-04 Dubai,United Arab Emirates</p>
-       <br></br>
-       
-          <p>Standard Weight Per Meter (Ton):<br></br><strong> {results.weightPerMeterTon} m.ton</strong></p>
-          <p>Standard Weight Per Feet (Kg):<br></br><strong>{results.weightPerFeetKg} kg</strong></p>
-          <p>Standard Weight Per Feet (Ton):<br></br><strong> {results.weightPerFeetTon} m.ton</strong></p>
-          <p>Required Length (Meters):<br></br><strong>  {results.lengthInMeters} meters</strong></p>
-          <p>Required Length (Feet): <br></br><strong> {results.lengthInFeet} feet</strong></p>
-          <p>Required Length (Ton):<br></br><strong>  {results.lengthInTon} m.ton</strong></p>
+        <div className="results-sectionpipe" ref={printRef}>
+          <img src="/assets/msglogo.png" alt="Company Logo" className="logo" />
+          <h2>MSG Oilfield Equipment Trading LLC</h2>
+          <p>Dubai industrial city Phase 1,Salih Shuaib 2,Warehouse No:J-04 Dubai,United Arab Emirates</p>
+          <br></br>
+
+          <h3>Results</h3>
+          <p>Standard Weight Per Meter (Ton):<br></br><strong>  {results.weightPerMeterTon} m.ton</strong></p>
+          <p>Standard Weight Per Feet (Kg):<br></br> <strong>  {results.weightPerFeetKg} kg</strong></p>
+          <p>Standard Weight Per Feet (Ton):<br></br> <strong>  {results.weightPerFeetTon} m.ton</strong></p>
+          <p>Required Length (Meters): <br></br> <strong> {results.lengthInMeters} meters</strong></p>
+          <p>Required Length (Feet): <br></br> <strong> {results.lengthInFeet} feet</strong></p>
+          <p>Required Length (Ton):<br></br><strong>   {results.lengthInTon} m.ton</strong></p>
           <p>Required Length (Kg): <br></br><strong> {results.lengthInKg} kg</strong></p>
-          <p>Rate Per Ton:<br></br><strong>  {results.ratePerTon} {rateCurrency}</strong></p>
-          <p>Rate Per Kg:<br></br><strong>  {results.ratePerKg} {rateCurrency}</strong></p>
-          <p>Rate Per Meter: <br></br><strong> {results.ratePerMeter} {rateCurrency}</strong></p>
-          <p>Rate Per Feet: <br></br><strong> {results.ratePerFeet} {rateCurrency}</strong></p>
-          <p>Converted Rate Per Ton:<br></br> <strong> {results.convertedRatePerTon} {rateCurrency === 'USD' ? 'AED' : 'USD'}</strong></p>
-          <p>Converted Rate Per Kg: <br></br><strong> {results.convertedRatePerKg} {rateCurrency === 'USD' ? 'AED' : 'USD'}</strong></p>
-          <p>Converted Rate Per Meter:<br></br><strong>  {results.convertedRatePerMeter} {rateCurrency === 'USD' ? 'AED' : 'USD'}</strong></p>
-          <p>Converted Rate Per Feet:<br></br><strong>  {results.convertedRatePerFeet} {rateCurrency === 'USD' ? 'AED' : 'USD'}</strong></p>
-          <p>Total Price:<br></br><strong>  {results.totalPrice} {rateCurrency}</strong></p>
-          <p>Converted Total Price: <br></br><strong> {results.convertedTotalPrice} {rateCurrency === 'USD' ? 'AED' : 'USD'}</strong></p>
-        
-    
-       { results && (
-        <button onClick={handleDownloadPDF} className="download-btn">
-          Download PDF
-        </button>
-       )}
-       </div>
-         )}
+          <p>Rate Per Ton: <br></br><strong>  {results.ratePerTon} {rateCurrency}</strong></p>
+          <p>Rate Per Kg: <br></br><strong>  {results.ratePerKg} {rateCurrency}</strong></p>
+          <p>Rate Per Meter: <br></br><strong>  {results.ratePerMeter} {rateCurrency}</strong></p>
+          <p>Rate Per Feet:<br></br> <strong>  {results.ratePerFeet} {rateCurrency}</strong></p>
+          <p>Converted Rate Per Ton: <br></br> <strong> {results.convertedRatePerTon} {rateCurrency === 'USD' ? 'AED' : 'USD'}</strong></p>
+          <p>Converted Rate Per Kg: <br></br> <strong> {results.convertedRatePerKg} {rateCurrency === 'USD' ? 'AED' : 'USD'}</strong></p>
+          <p>Converted Rate Per Meter:<br></br> <strong>  {results.convertedRatePerMeter} {rateCurrency === 'USD' ? 'AED' : 'USD'}</strong></p>
+          <p>Converted Rate Per Feet: <br></br><strong>  {results.convertedRatePerFeet} {rateCurrency === 'USD' ? 'AED' : 'USD'}</strong></p>
+          <p>Total Price: <br></br> <strong> {results.totalPrice} {rateCurrency}</strong></p>
+          <p>Converted Total Price:<br></br> <strong> {results.convertedTotalPrice} {rateCurrency === 'USD' ? 'AED' : 'USD'}</strong></p>
+
+          {results && (
+            <button onClick={handleDownloadPDF} className="download-btn">
+              Download PDF
+            </button>
+          )}
+        </div>
+      )}
     </div>
   );
 }

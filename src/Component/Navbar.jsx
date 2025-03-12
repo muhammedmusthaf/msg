@@ -2,11 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const menuRef = useRef(null);
+ 
 
   useEffect(() => {
     const handleResize = () => {
@@ -45,7 +47,13 @@ const Navbar = () => {
   const handleCloseMenu = () => {
     setMenuOpen(false);
     setOpenSubmenu(null);
+ 
   };
+  const handleLoginClick = () => {
+    setMenuOpen(false);
+    setOpenSubmenu(null);
+    window.location.href = "/"; // Only the Login button will reload the page
+};
 
   return (
     <nav className="navbar" ref={menuRef}>
@@ -145,12 +153,11 @@ const Navbar = () => {
         </li>
 
         <li className="book-now-btn">
-          <a href="https://wa.me/9591584523" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-            <button className="book-btn" onClick={handleCloseMenu}>
+            <button className="book-btn" onClick={handleLoginClick} >
               <span>Login</span>
               <span className="arrow-circle">→</span>
             </button>
-          </a>
+          
         </li>
       </ul>
     </nav>
