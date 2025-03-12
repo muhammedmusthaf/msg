@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
         <div className="footer-bottom">
           <p>
-            © 2023 <b>MSG</b> All rights reserved | Designed By <b>Vision Flow Technologies</b>.
+            © 2025 <b>MSG</b> All rights reserved | Designed By <b>Vision Flow Technologies</b>.
           </p>
         </div>
       </footer>
