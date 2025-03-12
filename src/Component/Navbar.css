@@ -152,7 +152,7 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #8b1c34;
+    background-color:#1e3a5f;
     color: white;
     font-weight: bold;
     transition: 0.3s;
@@ -169,7 +169,7 @@
     top: 0;
     width: 0;
     height: 100%;
-    background: #e9b472;
+    background: linear-gradient(to right, #2d5173, #4a6c88, #6f8f9c);
     transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1;
   }

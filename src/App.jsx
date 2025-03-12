@@ -22,7 +22,7 @@ import Company from './Pages/Company'
 import Iso from './Pages/Iso'
 import Faqs from './Pages/Faqs'
 import Contact from './Pages/Contact'
-import Calculator from './Pages/Calculator'
+
 
 import Footer from './Component/Footer'
 import Products from './Pages/Products'

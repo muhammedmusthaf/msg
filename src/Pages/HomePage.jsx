@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import Header from "./header.jsx";
 import SocialMedia from "./SocialMedia.jsx";
+import Bloger from "./Bloger.jsx";
 
 const images = [
   "/assets/1.PNG",
@@ -18,7 +19,7 @@ const images = [
 const products = [
   {
     image: "/assets/1.webp",
-    title: "Flanges",
+    title: "FLANGES",
     description: "We can supply a wide range of Flanges in all grades.",
     bgColor: "#FFEB3B",
   },
@@ -136,7 +137,8 @@ const HomePage = () => {
           <button className="homepage-cta-button" onClick={()=> navigate("/product")}>GO TO OUR PRODUCTS</button>
         </div>
       </div>
-     
+     <SocialMedia/>
+     <Bloger/>
     </div>
   );
 };

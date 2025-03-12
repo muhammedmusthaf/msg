@@ -19,8 +19,9 @@
 }
 
 .whoweare-hero-content h1 {
-    font-size: 2rem;
+    font-size: 80px;
     font-weight: bold;
+    margin-top: 90px;
 }
 
 .whoweare-heading2 {
@@ -194,7 +195,7 @@
     }
 
     .whoweare-hero-content h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .whoweare-main-content {
@@ -231,7 +232,7 @@
     }
 
     .whoweare-hero-content h1 {
-        font-size: 1.9rem;
+        font-size: 3rem;
     }
 
     .whoweare-heading2 {

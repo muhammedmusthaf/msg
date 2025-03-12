@@ -25,7 +25,7 @@ const Certification = () => {
     <div className="certification-app-container">
       <div className="certification-card">
         <div className="certification-background-image">
-          <img src="/assets/AdobeStock_258888565-2-scaled.jpeg" alt="Background" className="certification-background-img" />
+          <img src="/assets/faqbac.webp" alt="Background" className="certification-background-img" />
         </div>
         <div className="certification-image-container">
           <img src="/assets/ISO-9001-2015-MSG-New_page-0001.jpg" alt="Certificate" className="certification-image" />
@@ -40,7 +40,7 @@ const Certification = () => {
           reputable and certified company, dedicated to delivering the highest
           standards of quality and safety.
         </p>
-        <div className="certification-quote-icon">❝</div>
+        {/* <div className="certification-quote-icon">❝</div> */}
       </div>
       
 

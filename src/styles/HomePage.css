@@ -145,7 +145,7 @@
 
 .homepage-product-card {
   width: 330px;
-  height: 263px;
+  height: 300px;
   background-image: linear-gradient(to bottom, #4a6c88, #6f8f9c, #92b3b9);
   color: black;
   border-radius: 16px;
@@ -171,7 +171,7 @@
 .homepage-product-image {
   width: 80%;
   max-width: 140px;
-  height: 100px;
+  height: 150px;
 }
 
 /* Button Styles */
@@ -198,13 +198,17 @@
   background-color: black;
   color: white;
 }
-
-/* Responsive Design */
-@media (max-width: 992px) {
-  .homepage-products-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.homepage-product-card-content p{
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px;
 }
+.homepage-product-card-content h3{
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+
 
 @media (max-width: 768px) {
   .homepage-container {
@@ -212,6 +216,8 @@
     padding: 30px;
     text-align: center;
   }
+ 
+ 
 
   .homepage-image-content {
     width: 65%;
@@ -232,7 +238,8 @@
   }
 
   .homepage-text-content p {
-    font-size: 14px;
+    font-size: 16px;
+    text-align: left;
   }
 
   .homepage-products-grid {

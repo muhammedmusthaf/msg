@@ -1,0 +1,143 @@
+/* Fix the main slider container */
+.brand-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Prevent content from shifting */
+  }
+  
+  .brand-slider h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .brand-slider h2 {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* Slider container with increased width */
+  .slider-container {
+    width: 80vw; /* Increased width */
+  
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .brands-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 50px; /* Reduce gap slightly */
+    width: max-content; /* Ensures wrapper adjusts dynamically */
+  }
+  
+  .brand-logo {
+    width: 250px; /* Increased size */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .brand-image {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+  }
+  
+  /* Fix dot alignment */
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    gap: 8px;
+  }
+  
+  .dot {
+    width: 12px; /* Slightly larger dots */
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(150, 150, 150);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot:hover {
+    background-color: darkgray;
+  }
+  
+  .active-dot {
+    background-color: blue;
+  }
+  
+  /* Mobile view adjustments */
+  @media screen and (max-width: 768px) {
+    .slider-container {
+      width: 100vw; /* Increase width for mobile */
+    }
+
+    .brands-wrapper {
+      gap: 20px; /* Adjust spacing for better fit */
+    }
+
+    .brand-logo {
+      width: 180px;
+      height: 180px;
+    }
+
+    .brand-image {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .brand-slider h1 {
+      font-size: 30px;
+      margin-top: 30px;
+    }
+  
+    .brand-slider h2 {
+      font-size: 20px;
+    }
+  
+    .slider-container {
+      width: 100vw; 
+      /* Utilize full width */
+    }
+  
+    .brands-wrapper {
+      gap: 10px; /* Reduce spacing */
+    }
+  
+    .brand-logo {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .brand-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    /* Dots */
+    .dots {
+      margin-top: 10px;
+      gap: 5px;
+    }
+  
+    .dot {
+      width: 10px;
+      height: 10px;
+    }
+  }

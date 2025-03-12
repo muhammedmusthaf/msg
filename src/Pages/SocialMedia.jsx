@@ -78,13 +78,13 @@ function SocialMedia() {
   }, []);
   
   return (
-    <div className="container">
+    <div className="container5">
       <div className="image-section">
-        <img
+      <img
           src={
             currentImage === 0
-              ? "https://img.freepik.com/free-photo/summer-sunset-landscape_1127-294.jpg?t=st=1741325463~exp=1741329063~hmac=84b8c8176dd69c413f780ac9ef1260eb33fd485b2a6c2ebaaeb29724fe14925a&w=1380"
-              : "https://images.pexels.com/photos/10396410/pexels-photo-10396410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              ? "/assets/bac2.jpg"
+              : "/assets/bac3.jpeg"
           }
           alt="Piping"
         />
@@ -104,17 +104,17 @@ function SocialMedia() {
       <div className="content-section">
         <div className="left-section">
           <div className="box">
-            <img src="assets/" alt="Logo 1" className="box-logo" />
+            <img src="assets/top-rated.png" alt="Logo 1" className="box-logo" />
             <div className="counter">{count1}</div>
             <div className="box-text">Oil and Gas Projects</div>
           </div>
           <div className="box">
-            <img src="assets/" alt="Logo 2" className="box-logo" />
+            <img src="assets/energetic.png" alt="Logo 2" className="box-logo" />
             <div className="counter">{count2}</div>
             <div className="box-text">Power and Marine Projects</div>
           </div>
           <div className="box">
-            <img src="assets/" alt="Logo 3" className="box-logo" />
+            <img src="assets/house.png" alt="Logo 3" className="box-logo" />
             <div className="counter">{count3}</div>
             <div className="box-text">Other</div>
           </div>

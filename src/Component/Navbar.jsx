@@ -60,7 +60,7 @@ const Navbar = () => {
       )}
 
       <ul className={`menu ${menuOpen ? "open" : ""}`}>
-        <li><Link to="/" onClick={handleCloseMenu}>HomePage</Link></li>
+        <li><Link to="/" onClick={handleCloseMenu}>Home</Link></li>
         <li><Link to="/about" onClick={handleCloseMenu}>About</Link></li>
         
         <li className="dropdown">
@@ -133,7 +133,7 @@ const Navbar = () => {
         <li><Link to="/faq" onClick={handleCloseMenu}>Faqs</Link></li>
         <li><Link to="/contact" onClick={handleCloseMenu} id="id1">Contact</Link></li>
         <li className="dropdown">
-          <Link to="/calci" onClick={handleCloseMenu}>Calculator</Link>
+          <Link to="#" onClick={handleCloseMenu}>Calculator</Link>
           <span onClick={(e) => toggleSubmenu(4, e)}>▼</span>
           <ul className={`dropdown-menu ${openSubmenu === 4 ? "open" : ""}`}>
             <li><Link to="/unit" onClick={handleCloseMenu}>Unit Converter</Link></li>

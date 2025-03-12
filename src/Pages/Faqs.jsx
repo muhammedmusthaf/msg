@@ -105,8 +105,9 @@ function Faqs() {
             const img = faqImageRef.current;
             const textContainer = document.createElement('div');
             textContainer.style.position = 'absolute';
-            textContainer.style.top = '50%';
+            textContainer.style.top = '60%';
             textContainer.style.left = '50%';
+            
             textContainer.style.transform = 'translate(-50%, -50%)';
             img.style.position = 'relative';
             img.appendChild(textContainer);
@@ -118,6 +119,7 @@ function Faqs() {
                 letterSpan.style.color = 'white';
                 letterSpan.style.fontSize = '3em';
                 letterSpan.style.fontWeight = 'bold';
+               
                 letterSpan.style.opacity = '0';
                 letterSpan.style.transform = 'translateX(-20px)'; // Start slightly left
                 textContainer.appendChild(letterSpan);

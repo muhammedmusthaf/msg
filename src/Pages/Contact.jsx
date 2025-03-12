@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="map-container">
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps/embed/v1/place?q=Pais+catering&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src="https://www.google.com/maps/embed/v1/place?q=Dubai+industrial+city+Phase+1,+Salih+Shuaib+2,+Warehouse+No:J-04+Dubai,+United+Arab+Emirates&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
